@@ -16,7 +16,7 @@
         Welcome to our game! To play, just click on the letters below to make a guess. If you complete the word within
         the amount of turns, you win!
     </h2>
-    <section id="turns-remaining">Turns Remaining: 6</section>
+    <section class="turns" id="turns-remaining">Turns Remaining: 6</section>
     <main class="grid-container">
         <section class="word-blank" id="word-blank"></section><br><br>
         <div class="enter-box">
@@ -24,11 +24,10 @@
         </div>
         <div class="input-box">
             <input type="text" id="guess" onfocus="this.value=''" name="guess" maxlength="1"><br><br>
-            <button id="guess-button" onclick="checkForWin()">Go!</button>
-        </section><br>
+            <button id="guess-button" onclick="checkForWin()">GO!</button>
         </div>
         <div class="game-box">
-            <img id="space-man" src="" alt="spaceship">
+            <img id="space-man" src="./images/iconfinder_stickfigure_standing.png" alt="spaceship">
         </div>
     </main>
     <script src="myscripts.js"></script>

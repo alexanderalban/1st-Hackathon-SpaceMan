@@ -1,36 +1,90 @@
 body {
+  background-image: url("./images/background.jpeg");
+  background-size: cover;
   height: 90vh;
 }
 
+/* title */
 h1 {
   text-align: center;
   letter-spacing: 3em;
+  color: white;
+}
+
+/* welcome to game */
+h2 {
+  text-align: center;
+  color: white;
+}
+
+/* turns remaining */
+.turns {
+  margin-top: 4em;
+  font-size: 20px;
+  color: white;
+}
+
+/* enter your guess here */
+h3 {
+  font-size: 50px;
+  margin: 30px 10px;
+}
+
+input {
+  height: 50px;
+  width: 470px;
+}
+
+/* go button */
+button {
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
+}
+
+/* word blanks */
+.word-blank {
+  font-size: 55px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.7fr 0.9fr 1.4fr;
-  gap: 0px 0px;
-  height: 60vh;
+  gap: 0px 10px;
+  height: 75vh;
   grid-template-areas:
     "enter-guess image"
-    "input-box pic"
-    "word-blank pic";
+    "input-box image"
+    "word-blank image";
 }
 
 .word-blank {
   grid-area: word-blank;
+  background-color: #6d76a5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 80px;
 }
 
 .enter-box {
   grid-area: enter-guess;
+  text-align: right;
+  background-color: #6d76a5;
 }
 
 .input-box {
   grid-area: input-box;
+  background-color: #6d76a5;
+  margin-top: 0;
+  text-align: right;
+  padding-right: 20px;
 }
 
 .game-box {
   grid-area: image;
+  display: flex;
+  object-fit: scale-down;
+  background-color: #6d76a59e;
 }
