@@ -1,0 +1,36 @@
+body {
+  height: 90vh;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 3em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.7fr 0.9fr 1.4fr;
+  gap: 0px 0px;
+  height: 60vh;
+  grid-template-areas:
+    "enter-guess image"
+    "input-box pic"
+    "word-blank pic";
+}
+
+.word-blank {
+  grid-area: word-blank;
+}
+
+.enter-box {
+  grid-area: enter-guess;
+}
+
+.input-box {
+  grid-area: input-box;
+}
+
+.game-box {
+  grid-area: image;
+}
