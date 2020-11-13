@@ -7,44 +7,99 @@ body {
 /* title */
 h1 {
   text-align: center;
-  letter-spacing: 3em;
-  color: white;
+  text-shadow: 4px 2px 2px #67558f;
+  letter-spacing: 2.5em;
+  font-family: "Goldman", cursive;
+  color: rgb(236, 236, 236);
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: -5px;
+  margin-top: -3px;
+}
+
+.spaceman-line {
+  border: 2px solid rgb(236, 236, 236);
+  background-color: rgb(236, 236, 236);
 }
 
 /* welcome to game */
 h2 {
+  font-family: "Goldman", cursive;
   text-align: center;
-  color: white;
+  letter-spacing: 0.5px;
+  color: black;
+  background-color: rgb(236, 236, 236);
+  background-size: cover;
+  border-bottom: 10px double black;
+  margin-top: -5px;
 }
 
 /* turns remaining */
 .turns {
-  margin-top: 4em;
-  font-size: 20px;
+  margin-top: -4px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  font-family: "Goldman", cursive;
+  letter-spacing: 2px;
+  text-shadow: 4px 2px 2px #67558f;
+  text-align: right;
+  font-size: 28px;
   color: white;
 }
 
 /* enter your guess here */
 h3 {
   font-size: 50px;
+  font-family: "Big Shoulders Inline Text", cursive;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 2px white;
+
   margin: 30px 10px;
+}
+
+.line {
+  border: 2px solid black;
+  background-color: black;
+  width: 95%;
 }
 
 input {
   height: 50px;
   width: 470px;
+  font-family: "Big Shoulders Inline Text", cursive;
+  letter-spacing: 1px;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 10px;
+  border: none;
 }
 
 /* go button */
 button {
   width: 150px;
   height: 60px;
-  font-size: 25px;
+  font-family: "Big Shoulders Inline Text", cursive;
+  letter-spacing: 2px;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px white;
+
+  background-color: #6d76a59e;
+  border: none;
+  border-radius: 10px;
+}
+
+#guess-button:hover {
+  background: url(./images/rocket-ship.png) no-repeat;
+  background-size: 40%;
+  background-position: right;
+  background-color: white;
+  text-shadow: 2px 2px 2px #67558f;
 }
 
 /* word blanks */
 .word-blank {
   font-size: 55px;
+  font-family: "Goldman", cursive;
 }
 
 .grid-container {
@@ -52,7 +107,7 @@ button {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.7fr 0.9fr 1.4fr;
   gap: 0px 10px;
-  height: 75vh;
+  height: 78vh;
   grid-template-areas:
     "enter-guess image"
     "input-box image"
@@ -61,7 +116,7 @@ button {
 
 .word-blank {
   grid-area: word-blank;
-  background-color: #6d76a5;
+  background-color: rgba(255, 255, 255, 0.916);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -70,13 +125,13 @@ button {
 
 .enter-box {
   grid-area: enter-guess;
-  text-align: right;
-  background-color: #6d76a5;
+  text-align: left;
+  background-color: #e0c7bee8;
 }
 
 .input-box {
   grid-area: input-box;
-  background-color: #6d76a5;
+  background-color: #e0c7bee8;
   margin-top: 0;
   text-align: right;
   padding-right: 20px;
