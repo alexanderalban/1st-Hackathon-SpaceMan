@@ -143,3 +143,69 @@ button {
   object-fit: scale-down;
   background-color: #6d76a59e;
 }
+
+@media (max-device-width: 480px) {
+  body {
+    height: auto;
+  }
+
+  h1 {
+    font-size: 35px;
+    letter-spacing: 25px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    /* width: 50vw; */
+    /* height: 78vh; */
+    grid-template-areas:
+      "enter-guess"
+      "input-box"
+      "word-blank"
+      "image";
+  }
+
+  .word-blank {
+    grid-area: word-blank;
+    width: 95vw;
+  }
+
+  .enter-box {
+    grid-area: enter-guess;
+    width: 95vw;
+    text-align: left;
+    background-color: #e0c7bee8;
+  }
+
+  .input-box {
+    grid-area: input-box;
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e0c7bee8;
+    margin-top: 0;
+    text-align: right;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .game-box {
+    grid-area: image;
+    width: 95vw;
+    display: flex;
+    object-fit: cover;
+    background-color: #6d76a59e;
+  }
+
+  #space-man {
+    width: 400px;
+    height: 400px;
+  }
+
+  #guess {
+    width: auto;
+    font-size: 25px;
+  }
+}
