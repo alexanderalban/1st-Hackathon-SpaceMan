@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&family=Goldman:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&family=Goldman:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Space-Man!</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>
-            SPACEMAN
-        </h1>
-        <hr class="spaceman-line">
+      <h1>SPACEMAN</h1>
+      <hr class="spaceman-line" />
     </header>
     <h2>
-        Welcome to our game! To play, just click on the letters below to make a guess. If you complete the word within
-        the amount of turns, you win!
+      Welcome to our game! To play, just enter a letter below to make a guess.
+      If you complete the word within the amount of turns, you win!
     </h2>
     <section class="turns" id="turns-remaining">Turns Remaining: 6</section>
     <main class="grid-container">
-        <section class="word-blank" id="word-blank"></section><br><br>
-        <div class="enter-box">
-            <h3>Enter your guess here!</h3>
-            <hr class="line">
-        </div>
-        <div class="input-box">
-            <input placeholder="only enter a single letter." type="text" id="guess" onfocus="this.value=''" name="guess" maxlength="1"><br><br>
-            <button id="guess-button" onclick="checkForWin()">GO!</button>
-        </div>
-        <div class="game-box">
-            <img id="space-man" src="./images/iconfinder_stickfigure_standing.png" alt="spaceship">
-        </div>
+      <section class="word-blank" id="word-blank"></section>
+      <br /><br />
+      <div class="enter-box">
+        <h3>Enter your guess here!</h3>
+        <hr class="line" />
+      </div>
+      <div class="input-box">
+        <input
+          placeholder="only enter a single letter."
+          type="text"
+          id="guess"
+          onfocus="this.value=''"
+          name="guess"
+          maxlength="1"
+        /><br /><br />
+        <button id="guess-button" onclick="checkForWin()">GO!</button>
+      </div>
+      <div class="game-box">
+        <img
+          id="space-man"
+          src="./images/iconfinder_stickfigure_standing.png"
+          alt="spaceship"
+        />
+      </div>
     </main>
     <script src="myscripts.js"></script>
-</body>
+  </body>
 </html>
